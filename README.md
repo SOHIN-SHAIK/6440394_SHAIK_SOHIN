@@ -1,0 +1,54 @@
+# 🚀 SOHIN_JAVA_FSE – Cognizant Digital Nurture Program
+
+Welcome to the official repository for my Full Stack Engineering journey under the **Cognizant Digital Nurture Program**. This repo covers all exercises, and core concepts across three major modules.
+
+---
+
+## 📦 Modules Covered
+
+### 🧩 Module 1: HTML, CSS, JavaScript, Bootstrap
+- ✅ Responsive Layouts (Flexbox & Grid)
+- 🎨 Styling with CSS & Bootstrap Utilities
+- 🧠 JavaScript Fundamentals & DOM Manipulation
+- 🛠️ Components: Navbars, Forms, Cards, Modals
+
+### 🗃️ Module 2: SQL
+- 🏗️ Schema Design & Normalization
+- 📄 DDL, DML, and DQL Operations
+- 🔗 Joins, Views, Indexing
+- 🧪 Practice with MySQL Workbench
+
+### ☕ Module 3: Core Java
+- 🔄 OOP Principles (Abstraction, Inheritance, Polymorphism)
+- 🧵 Exception Handling & Multithreading
+- 📚 Collections Framework
+- 🗂️ File Handling, JDBC Integration
+
+---
+
+## 📁 Folder Structure
+SOHIN_JAVA_FSE/
+├── 📂 Module1_HTML_CSS_JS_Bootstrap/
+├── 📂 Module2_SQL/
+└── 📂 Module3_Core_Java/
+
+
+---
+
+## 🧰 Tech Stack
+
+| Layer       | Technologies                            |
+|-------------|-----------------------------------------|
+| Frontend    | HTML5, CSS3, JavaScript, Bootstrap 5    |
+| Backend     | Java (Core Concepts)                    |
+| Database    | MySQL                                   |
+| Tools       | Git, GitHub, VS Code, MySQL Workbench   |
+
+---
+
+## 🧑‍💻 Author
+
+**👨‍🎓 Shaik Sohin**  
+🔗 GitHub: [SOHIN-SHAIK](https://github.com/SOHIN-SHAIK)
+
+
