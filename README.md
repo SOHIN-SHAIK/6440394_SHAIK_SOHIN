@@ -1,4 +1,4 @@
-# 🚀 SOHIN_JAVA_FSE – Cognizant Digital Nurture Program
+# 🚀 SOHIN_JAVA_FSE – Cognizant Digital Nurture 4.0 Program
 
 Welcome to the official repository for my Full Stack Engineering journey under the **Cognizant Digital Nurture Program**. This repo covers all exercises, and core concepts across three major modules.
 
@@ -12,7 +12,7 @@ Welcome to the official repository for my Full Stack Engineering journey under t
 - 🧠 JavaScript Fundamentals & DOM Manipulation
 - 🛠️ Components: Navbars, Forms, Cards, Modals
 
-### 🗃️ Module 2: SQL
+### 🗃️ Module 2: ANSI_SQL
 - 🏗️ Schema Design & Normalization
 - 📄 DDL, DML, and DQL Operations
 - 🔗 Joins, Views, Indexing
@@ -45,10 +45,21 @@ SOHIN_JAVA_FSE/
 | Tools       | Git, GitHub, VS Code, MySQL Workbench   |
 
 ---
+## **Resource**
+https://github.com/trinity2040/Digital-Nurture-4.0
+
+---
+## 📌 Status
+
+✅ **Completed & Submitted** for review under Cognizant Digital Nurture Program  
+🏁 **Ready for evaluation and professional use**
+
+--
 
 ## 🧑‍💻 Done By
 
 **👨‍🎓 Shaik Sohin**  
 🔗 GitHub: [SOHIN-SHAIK](https://github.com/SOHIN-SHAIK)
+
 
 
