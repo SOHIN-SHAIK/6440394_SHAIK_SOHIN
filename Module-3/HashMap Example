@@ -1,0 +1,27 @@
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        HashMap<Integer, String> studentMap = new HashMap<>();
+        Scanner scanner = new Scanner(System.in);
+        int id;
+        String name;
+
+        while (true) {
+            System.out.print("Enter student ID (or -1 to stop): ");
+            id = scanner.nextInt();
+            if (id == -1) {
+                break;
+            }
+            System.out.print("Enter student name: ");
+            name = scanner.next();
+            studentMap.put(id, name);
+        }
+
+        System.out.print("Enter student ID to retrieve name: ");
+        int searchId = scanner.nextInt();
+        System.out.println("Student Name: " + studentMap.get(searchId));
+    }
+}
