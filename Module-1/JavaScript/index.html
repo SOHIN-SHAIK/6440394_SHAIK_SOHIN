@@ -34,17 +34,16 @@
     placeholder="Search by event name (press Enter)" 
   />
 
-  <form id="registrationForm">
-    <input type="text" name="name" placeholder="Full Name" />
-    <input type="email" name="email" placeholder="Email Address" />
-    <select name="event">
-      <option value="">Select Event</option>
-      <option value="music">Music Festival</option>
-      <option value="art">Art Workshop</option>
-    </select>
-    <button type="submit">Register</button>
-    <div id="errorMsg"></div>
-  </form>
+  <form id="regForm">
+  <input type="text" name="username" placeholder="Username" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <button type="submit">Register</button>
+</form>
+
+<div id="message"></div>
+
+<script src="ajaxRegistration.js"></script>
+
 
 </body>
 </html>
