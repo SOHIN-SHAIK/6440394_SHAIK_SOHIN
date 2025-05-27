@@ -1,6 +1,6 @@
 # 🚀 SOHIN_JAVA_FSE – Cognizant Digital Nurture 4.0 Program
 
-Welcome to the official repository for my Full Stack Engineering journey under the **Cognizant Digital Nurture Program**. This repo covers all exercises, and core concepts across three major modules.
+Welcome to the official repository for my Full Stack Engineering journey under the **Cognizant Digital Nurture 4.0 Program**. This repo covers all exercises, and core concepts across three major modules.
 
 ---
 
@@ -45,16 +45,16 @@ SOHIN_JAVA_FSE/
 | Tools       | Git, GitHub, VS Code, MySQL Workbench   |
 
 ---
-## **Resource**
-https://github.com/trinity2040/Digital-Nurture-4.0
+## 📚 Resource  
+[🔗 Digital Nurture 4.0 Repository](https://github.com/trinity2040/Digital-Nurture-4.0)
 
 ---
-## 📌 Status
 
+## 📌 Status
 ✅ **Completed & Submitted** for review under Cognizant Digital Nurture Program  
 🏁 **Ready for evaluation and professional use**
 
---
+---
 
 ## 🧑‍💻 Done By
 
