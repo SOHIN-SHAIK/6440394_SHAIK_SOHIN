@@ -1,0 +1,29 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+public class InsertUpdateJDBC {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/your_database";
+        String user = "your_username";
+        String password = "your_password";
+
+        try (Connection connection = DriverManager.getConnection(url, user, password)) {
+            String insertSQL = "INSERT INTO students (name, age) VALUES (?, ?)";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(insertSQL)) {
+                preparedStatement.setString(1, "John Doe");
+                preparedStatement.setInt(2, 20);
+                preparedStatement.executeUpdate();
+            }
+
+            String updateSQL = "UPDATE students SET age = ? WHERE name = ?";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(updateSQL)) {
+                preparedStatement.setInt(1, 21);
+                preparedStatement.setString(2, "John Doe");
+                preparedStatement.executeUpdate();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
