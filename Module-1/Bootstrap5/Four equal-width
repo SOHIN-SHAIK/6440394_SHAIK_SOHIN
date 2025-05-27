@@ -1,9 +1,0 @@
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3 bg-light border">Col 1</div>
-    <div class="col-sm-3 bg-light border">Col 2</div>
-    <div class="col-sm-3 bg-light border">Col 3</div>
-    <div class="col-sm-3 bg-light border">Col 4</div>
-  </div>
-</div>
