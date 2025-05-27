@@ -34,4 +34,12 @@ public class TransactionHandlingJDBC {
         }
     }
 }
+# Create and Use Java Modules
 
+module com.greetings {
+    exports com.greetings;
+}
+
+module com.utils {
+    exports com.utils;
+}
