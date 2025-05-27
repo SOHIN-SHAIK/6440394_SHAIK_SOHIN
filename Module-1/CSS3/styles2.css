@@ -1,0 +1,55 @@
+/* ============================= */
+/* General Body Styling Section */
+/* ============================= */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================= */
+/* Header and Navigation Styles */
+/* ============================= */
+header {
+  background-color: #004085;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* Style for main navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* ============================= */
+/* Style for main CTA button     */
+/* ============================= */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect for CTA button */
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* ============================= */
+/* Footer Styling Section        */
+/* ============================= */
+footer {
+  background-color: #343a40;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}

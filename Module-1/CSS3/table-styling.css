@@ -1,0 +1,48 @@
+/* table-styling.css */
+
+/* ------------------------------------ */
+/* Table Base Styling */
+/* ------------------------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* ------------------------------------ */
+/* Table Header Styling */
+/* ------------------------------------ */
+th {
+  background-color: #004080;
+  color: white;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+/* ------------------------------------ */
+/* Table Cell Styling */
+/* ------------------------------------ */
+td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+}
+
+/* ------------------------------------ */
+/* Zebra Striping for Rows */
+/* ------------------------------------ */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* ------------------------------------ */
+/* Hover Effect on Rows */
+/* ------------------------------------ */
+tbody tr:hover {
+  background-color: #d0e4f5;
+  cursor: pointer;
+}

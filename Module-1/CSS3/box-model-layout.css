@@ -1,0 +1,33 @@
+/* box-model-layout.css */
+
+/* ------------------------------------ */
+/* Event Card Spacing and Border */
+/* ------------------------------------ */
+.eventCard {
+  border: 2px solid #007BFF; /* blue border */
+  padding: 20px;             /* inner spacing */
+  margin: 15px 0;            /* vertical spacing */
+  border-radius: 8px;
+  background-color: #f0f8ff;
+}
+
+/* ------------------------------------ */
+/* Outline for Focused Form Fields */
+/* ------------------------------------ */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #ff6600; /* bright orange outline */
+  outline-offset: 2px;
+}
+
+/* ------------------------------------ */
+/* Visibility Comparison Examples */
+/* ------------------------------------ */
+.visibility-hidden {
+  visibility: hidden; /* element hidden but occupies space */
+}
+
+.display-none {
+  display: none; /* element removed from layout */
+}

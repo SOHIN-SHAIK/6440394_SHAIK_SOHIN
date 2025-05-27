@@ -1,0 +1,32 @@
+/* ============================= */
+/* Body background with fallback color and image */
+/* ============================= */
+body {
+  background-color: #f0f4f8; /* Fallback solid color */
+  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+}
+
+/* ============================= */
+/* Section headers with gradient background */
+/* ============================= */
+section h2 {
+  background: linear-gradient(to right, #007BFF, #00C6FF);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* Text color using HEX and RGBA */
+/* ============================= */
+p {
+  color: #333333; /* HEX */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 10px;
+  border-radius: 6px;
+}

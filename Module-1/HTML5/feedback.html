@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Feedback</title>
+  <style>
+    #feedbackForm {
+      max-width: 400px;
+      margin: 30px auto;
+      font-family: Arial, sans-serif;
+    }
+    label, select, input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 1em;
+    }
+    #phoneError {
+      color: red;
+      font-size: 0.9em;
+    }
+    #eventFee {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    #confirmationMsg {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+    #eventImage {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    #eventImage.enlarged {
+      transform: scale(1.8);
+      border-color: #007BFF;
+    }
+    #charCount {
+      font-size: 0.9em;
+      margin-top: 5px;
+      text-align: right;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="feedbackForm">
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" placeholder="Enter 10-digit phone" onblur="validatePhone()" />
+    <div id="phoneError"></div>
+
+    <label for="eventSelect">Select Event:</label>
+    <select id="eventSelect" onchange="showFee()">
+      <option value="" disabled selected>Select an event</option>
+      <option value="festival" data-fee="50">Festival</option>
+      <option value="workshop" data-fee="100">Workshop</option>
+      <option value="concert" data-fee="150">Concert</option>
+    </select>
+    <div id="eventFee"></div>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" rows="4" onkeyup="countChars()" placeholder="Write your feedback..."></textarea>
+    <div id="charCount">0 characters</div>
+
+    <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+  </form>
+
+  <img src="community_event.jpg" alt="Community Event" id="eventImage" ondblclick="toggleImageSize()" title="Double-click to enlarge" />
+
+  <div id="confirmationMsg"></div>
+
+  <script>
+    function validatePhone() {
+      const phone = document.getElementById('phone').value.trim();
+      const errorDiv = document.getElementById('phoneError');
+      const phoneRegex = /^\d{10}$/;
+      errorDiv.textContent = phoneRegex.test(phone) ? '' : 'Invalid phone number. Must be 10 digits.';
+    }
+
+    function showFee() {
+      const select = document.getElementById('eventSelect');
+      const feeDiv = document.getElementById('eventFee');
+      const option = select.options[select.selectedIndex];
+      const fee = option.getAttribute('data-fee');
+      feeDiv.textContent = fee ? `Event fee: $${fee}` : '';
+    }
+
+    function submitFeedback() {
+      const phoneError = document.getElementById('phoneError').textContent;
+      if (phoneError) {
+        alert('Please fix phone number before submitting.');
+        return;
+      }
+      document.getElementById('confirmationMsg').textContent = 'Thank you for your feedback!';
+    }
+
+    function toggleImageSize() {
+      const img = document.getElementById('eventImage');
+      img.classList.toggle('enlarged');
+    }
+
+    function countChars() {
+      const feedback = document.getElementById('feedback').value;
+      document.getElementById('charCount').textContent = `${feedback.length} characters`;
+    }
+  </script>
+
+</body>
+</html>

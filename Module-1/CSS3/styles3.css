@@ -1,0 +1,51 @@
+/* ============================= */
+/* Reset default margin & padding */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* Style all <h2> tags */
+/* ============================= */
+h2 {
+  color: #004085;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* Banner styling using ID selector */
+/* ============================= */
+#mainHeader {
+  background: linear-gradient(to right, #007BFF, #0056b3);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* Event container cards using class selector */
+/* ============================= */
+.eventCard {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/* Group styling for h3 and p tags */
+/* ============================= */
+h3, p {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 10px;
+}

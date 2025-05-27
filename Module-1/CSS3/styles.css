@@ -1,0 +1,77 @@
+/* Header styles */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(211, 47, 47, 0.6);
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #283593;
+  margin-top: 15px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+/* Add reusable button style */
+button {
+  display: block;
+  margin: 30px auto;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+/* ------------------------------------ */
+/* Typography Styles */
+/* ------------------------------------ */
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply base font to body */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Header styles */
+h1, h2, h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Paragraph text */
+p {
+  font-size: 15px;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Special description block */
+.description {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  text-align: left;
+  line-height: 1.5;
+}

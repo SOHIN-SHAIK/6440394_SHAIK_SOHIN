@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Preferences</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 30px auto;
+    }
+    select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 15px;
+      font-size: 1em;
+    }
+    #status {
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="eventPref">Select Preferred Event Type:</label>
+  <select id="eventPref">
+    <option value="" disabled selected>Select event type</option>
+    <option value="festival">Festival</option>
+    <option value="workshop">Workshop</option>
+    <option value="concert">Concert</option>
+    <option value="meetup">Meetup</option>
+  </select>
+
+  <button id="clearBtn">Clear Preferences</button>
+
+  <div id="status"></div>
+
+  <script>
+    const select = document.getElementById('eventPref');
+    const status = document.getElementById('status');
+    const clearBtn = document.getElementById('clearBtn');
+
+    // Load saved preference on page load
+    window.onload = () => {
+      const saved = localStorage.getItem('preferredEvent');
+      if (saved) {
+        select.value = saved;
+        status.textContent = `Loaded preference: ${saved}`;
+      }
+    };
+
+    // Save preference on change
+    select.addEventListener('change', () => {
+      localStorage.setItem('preferredEvent', select.value);
+      sessionStorage.setItem('preferredEvent', select.value);
+      status.textContent = `Preference saved: ${select.value}`;
+    });
+
+    // Clear storage on button click
+    clearBtn.addEventListener('click', () => {
+      localStorage.removeItem('preferredEvent');
+      sessionStorage.removeItem('preferredEvent');
+      select.value = "";
+      status.textContent = 'Preferences cleared.';
+    });
+  </script>
+
+</body>
+</html>

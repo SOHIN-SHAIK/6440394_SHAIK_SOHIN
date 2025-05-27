@@ -1,0 +1,18 @@
+/* multi-column.css */
+
+/* ------------------------------------ */
+/* News Article Multi-Column Layout */
+/* ------------------------------------ */
+.news-article {
+  column-count: 2;            /* Two columns */
+  column-gap: 30px;           /* Space between columns */
+  column-rule: 1px solid gray; /* Vertical separator line */
+  padding: 15px;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+  border-radius: 6px;
+  margin: 20px 0;
+}

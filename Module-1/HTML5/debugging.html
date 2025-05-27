@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debugging Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 30px auto;
+    }
+    #testDiv {
+      width: 300px;
+      height: 150px;
+      background-color: lightblue;
+      padding: 20px;
+      border: 2px solid #333;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="testDiv">Hover over me and check styles in DevTools.</div>
+  <button id="testBtn">Click me</button>
+
+  <script>
+    const btn = document.getElementById('testBtn');
+    const testDiv = document.getElementById('testDiv');
+
+    btn.addEventListener('click', () => {
+      console.log('Button clicked');
+      debugger; // breakpoint for Chrome DevTools
+      let x = 10;
+      let y = 20;
+      let sum = x + y;
+      console.log('Sum:', sum);
+      testDiv.textContent = `Sum is ${sum}`;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Community Event Portal</title>
+  <script src="eventDetailsManagement.js" defer></script>
+  <script src="eventHandling.js" defer></script>
+  <script src="domManipulation.js" defer></script>
+  <script src="eventValidationAndRegistration.js" defer></script>
+  <script src="eventFunctions.js" defer></script>
+  <script src="eventObjects.js" defer></script>
+  <script src="eventArrays.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="jqueryTasks.js" defer></script>
+</head>
+<body>
+
+  <h1>Local Community Event Portal</h1>
+
+  <div id="eventsContainer"></div>
+
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="Festival">Festival</option>
+    <option value="Sports">Sports</option>
+    <option value="Music">Music</option>
+    <option value="Art">Art</option>
+  </select>
+
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search by event name (press Enter)" 
+  />
+
+  <form id="registrationForm">
+    <input type="text" name="name" placeholder="Full Name" />
+    <input type="email" name="email" placeholder="Email Address" />
+    <select name="event">
+      <option value="">Select Event</option>
+      <option value="music">Music Festival</option>
+      <option value="art">Art Workshop</option>
+    </select>
+    <button type="submit">Register</button>
+    <div id="errorMsg"></div>
+  </form>
+
+</body>
+</html>
