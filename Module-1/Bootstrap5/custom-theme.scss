@@ -1,0 +1,9 @@
+// Step 1: Load Bootstrap functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// Step 2: Define your custom theme variables before loading Bootstrap styles
+$primary: #0066cc;        // New primary color (blue shade)
+$border-radius: 1rem;     // Moderate rounding for components
+
+// Step 3: Import full Bootstrap with your customizations
+@import "../node_modules/bootstrap/scss/bootstrap";
