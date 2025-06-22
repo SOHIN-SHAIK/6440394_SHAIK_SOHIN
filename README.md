@@ -1,4 +1,4 @@
-# 🚀 SOHIN_JAVA_FSE – Cognizant Digital Nurture 4.0 Program
+# 🚀 SOHIN_JAVA_FSE – Cognizant Digital Nurture 4.0 UpSkilling Program
 
 Welcome to the official repository for my Full Stack Engineering journey under the **Cognizant Digital Nurture 4.0 Program**. This repo covers all exercises, and core concepts across three major modules.
 
